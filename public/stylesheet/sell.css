@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Corbel";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: #474845;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.step p, .step b, .pg2 h1, .pg3 h1, .pg3 h3, .pg3 p, .pg4 p, .pg4 h5 {
+    color: black;
+}
+
+.pg1 {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../img/sell.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vh;
+}
+
+.pg1 .head {
+    padding-bottom: 1.5vh;
+    font-size: 2rem; 
+}
+
+.pg1 p {
+    padding-bottom: 0.5vh;
+    font-size: 1rem; 
+}
+
+.pg1 .join-btn {
+    width: 20vh;
+    height: 5vh;
+    background-color: #817e52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 10px;
+    font-size: 1rem; 
+}
+
+.pg1 .join-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin: 20px; 
+}
+
+.pg2 {
+    margin: 20px;
+}
+
+.pg2 h1 {
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.pg2 .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 1vh;
+    flex-direction: column; 
+}
+
+.pg2 .step img {
+    width: 100px;
+    height: auto;
+}
+
+.pg3 {
+    margin-left: 30px;
+}
+
+.pg3 .content {
+    padding: 3px;
+    padding-left: 5vh;
+    padding-top: 1vh;
+}
+
+.pg4 {
+    height: auto; 
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 0.5vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4bfbf;
+    margin: 5px;
+    padding: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pg1 {
+        height: 50vh;
+        padding-left: 5vh;
+        text-align: center;
+    }
+
+    .pg1 .head {
+        font-size: 1.5rem;
+    }
+
+    .pg1 p {
+        font-size: 0.9rem;
+    }
+
+    .pg1 .join-btn {
+        width: 18vh;
+        height: 4.5vh;
+        font-size: 0.9rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .pg2 .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pg2 .step img {
+        width: 80px;
+    }
+
+    .pg2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .pg3 {
+        margin: 20px;
+    }
+
+    .pg3 .content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .swiper-slide {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pg1 {
+        height: 40vh;
+        padding-left: 3vh;
+    }
+
+    .pg1 .head {
+        font-size: 1.2rem;
+    }
+
+    .pg1 p {
+        font-size: 0.8rem;
+    }
+
+    .pg1 .join-btn {
+        width: 16vh;
+        height: 4vh;
+        font-size: 0.8rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .pg2 .step img {
+        width: 60px;
+    }
+
+    .pg2 h1 {
+        font-size: 1.2rem;
+    }
+
+    .pg3 {
+        margin: 10px;
+    }
+
+    .swiper-slide {
+        font-size: 14px;
+    }
+}

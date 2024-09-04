@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" >
+</head>
+
+<body>
+    <%- include('../nav.ejs')%>
+
+    <div class="login">
+        <img class='login-bg' src=".\img\login-bg.jpg" alt="">
+        <form action="/user/submit" method="POST" class="login-form">
+            <h1>LOGIN</h1>
+            <div class="login-content">
+                <div class="login-box">
+                    <i class="ri-user-3-line login-icon"></i>
+                    <div class="login-box-input">
+                        <input type="email" id="email_id" required class="login-input"  placeholder=" " name="email_id">
+                        <lable for="email_id" class="login-lable">Email</lable>
+                    </div>
+                </div>
+
+                <div class="login-box">
+                    <i class="ri-lock-2-line login-icon"></i>
+                    <div class="login-box-input">
+                        <input type="password" id="password" required class="login-input"  placeholder=" " name="password">
+                        <lable for="password" class="login-lable">Password</lable>
+                        <i class="ri-eye-off-line login-eye" id="login-eye"></i>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="rememberforgot">
+                <div class="remember">
+                   <input type="checkbox" class="remember-input" id="remember-me">
+                   <label for="remember-me" class="remember-label">Remember me</label>
+                </div>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+             </div>
+             <button type="submit" class="login-button">Login</button>
+             <p class="register">
+                Don't have an account? <a href="./user/new">Sign Up</a>
+             </p>
+        </form>
+    </div>
+    <script src="/javascript/login.js"></script>
+</body>
+</html>

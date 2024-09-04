@@ -1,0 +1,150 @@
+*{
+    color: black;
+}
+
+.nav a{
+    color: aliceblue;;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: #474845;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  
+    border-radius: 50px;
+}
+
+.top{
+    height: 250px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 450px 450px;
+    gap: 3vh;
+}
+
+.type{
+    height: 900px;
+    margin: 15px;
+    padding: 5vh;
+    padding-top: 0px;
+}
+.grid p, .grid p, .grid i, .grid button {
+    color: black;
+}
+
+.type h2{
+    padding-left: 4vh;
+    padding-bottom: 1vh;
+    color: black;
+}
+.card-image-top{
+    width: 100%;
+    height: 50%;
+}
+
+.btn{
+    background-color: rgb(237, 217, 192);
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    letter-spacing: 0.2vh;
+    font-weight: 500;
+    margin-top: 0.5vh;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+@media (max-width: 877px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .card-title {
+        font-size: 1.15rem;
+    }
+  
+    .card-text {
+        font-size: 0.95rem;
+    }
+  
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .card-title {
+        font-size: 1rem;
+    }
+  
+    .card-text {
+        font-size: 0.85rem;
+    }
+  
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .card-title {
+        font-size: 0.95rem;
+    }
+  
+    .card-text {
+        font-size: 0.8rem;
+    }
+  
+    .btn {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+}

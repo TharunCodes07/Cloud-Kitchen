@@ -1,0 +1,44 @@
+.nav-type {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left:7vh;
+    padding-top: 5vh;
+    gap: 50px;
+    justify-content: flex-start;
+    z-index: 100;
+}
+.nav-type img {
+  height: 7vw;
+}
+
+.nav-type h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.15vw;
+}
+
+.nav-type a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+    
+}
+
+.nav-type a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+}
+
+.nav-type a:hover::before{
+  width: 100%;
+  transform: scaleX(1)
+}
